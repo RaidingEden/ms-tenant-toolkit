@@ -1,0 +1,15 @@
+# Real tenant config: never commit
+config/tenants.json
+
+# Daemon runtime state
+scripts/ps-session/jobs/
+scripts/ps-session/results/
+scripts/ps-session/*.pid
+scripts/ps-session/*.log
+scripts/ps-session/*.log.*
+scripts/ps-session/*.err
+
+# Local scratch
+*.csv
+__pycache__/
+.DS_Store

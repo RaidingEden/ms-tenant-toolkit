@@ -1,0 +1,22 @@
+{
+  "Tenants": {
+    "CONTOSO": {
+      "TenantId": "00000000-0000-0000-0000-000000000001",
+      "SubscriptionId": "00000000-0000-0000-0000-0000000000a1",
+      "Account": "admin@contoso.onmicrosoft.com",
+      "BrowserProfile": "Contoso"
+    },
+    "FABRIKAM": {
+      "TenantId": "00000000-0000-0000-0000-000000000002",
+      "SubscriptionId": "",
+      "Account": "admin@fabrikam.onmicrosoft.com",
+      "BrowserProfile": "Fabrikam"
+    }
+  },
+  "SignInRouter": {
+    "Enabled": false,
+    "AppPath": "/Applications/Google Chrome.app",
+    "AppName": "Google Chrome",
+    "LocalState": "~/Library/Application Support/Google/Chrome/Local State"
+  }
+}
