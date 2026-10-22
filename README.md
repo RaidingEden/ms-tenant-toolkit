@@ -1,8 +1,13 @@
 # ms-tenant-toolkit
 
 PowerShell toolkit and Claude skill for managing several Microsoft 365 / Entra / Intune
-tenants from one machine, with strict per-tenant isolation. Runs on **Windows and macOS**
+tenants from one machine, with strict per-tenant isolation. Built for **Windows and macOS**
 with PowerShell 7.
+
+> **Platform status:** tested on macOS only. The Windows code paths (Windows account
+> broker sign-in, process handling via `Win32_Process`, minimized daemon window) have been
+> written and reviewed but **not yet run on a Windows machine**. Try it against a test
+> tenant first, and please open an issue if something breaks.
 
 ## What's in it
 
@@ -47,3 +52,7 @@ with PowerShell 7.
 - `daemon.ps1` verifies the tenant it actually reached (Graph and EXO separately) and
   exits instead of serving jobs on a mismatch.
 - `config/tenants.json` and all runtime state (logs, PID files, job results) are git-ignored.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
